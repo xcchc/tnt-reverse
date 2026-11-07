@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 运行时产物
+runtime_upstream.log
+*.log
+!docs/**/*.log
+
+# 逆向工作区（不进仓库）
+reverse_v260906.1/
+private_server/
+emotes_final/
+emotes_original/
+emotes_anim/
+tnt安装包/
+*.APK
+*.apk
+
+# 中间记录
+REVERSE_STATE.md
+NEXT_PROMPT.md
+state*.md
+AES_突破记录.md
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

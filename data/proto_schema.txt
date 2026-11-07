@@ -1,0 +1,1382 @@
+message ActivateAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+  /* 3 */ Id = 3;
+  /* 4 */ Where = 4;
+}
+
+message ActivateReq {
+  /* 1 */ Password = 1;
+  /* 2 */ Email = 2;
+  /* 3 */ Key = 3;
+  /* 4 */ Id = 4;
+}
+
+message ActivityListNotify {
+  /* 1 */ Id = 1;
+}
+
+message AddFriendAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+  /* 3 */ Name = 3;
+}
+
+message AddFriendReq {
+  /* 1 */ Id = 1;
+  /* 2 */ Black = 2;
+}
+
+message Attr {
+  /* 1 */ Value = 1;
+  /* 2 */ Plus = 2;
+}
+
+message AttrF {
+  /* 1 */ Value = 1;
+  /* 2 */ Plus = 2;
+}
+
+message BPLockAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message BPLockReq {
+  /* 1 */ Type = 1;
+}
+
+message BPSelectAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message BPSelectReq {
+  /* 1 */ Type = 1;
+  /* 2 */ Index = 2;
+}
+
+message BattleNotify {
+  /* 1 */ Sn = 1;
+  /* 2 */ Type = 2;
+  /* 3 */ Begin = 3;
+  /* 4 */ Player = 4;
+  /* 5 */ Result = 5;
+  /* 6 */ Loading = 6;
+  /* 7 */ Card = 7;
+  /* 8 */ Action = 8;
+  /* 9 */ Change = 9;
+  /* 10 */ Move = 10;
+  /* 11 */ Stay = 11;
+  /* 12 */ Error = 12;
+  /* 13 */ Fly = 13;
+  /* 14 */ Fire = 14;
+  /* 15 */ Delay = 15;
+  /* 16 */ Damage = 16;
+  /* 17 */ ResultMecha = 17;
+  /* 18 */ Ride = 18;
+  /* 19 */ Storm = 19;
+  /* 20 */ Thunder = 20;
+  /* 21 */ BpBegin = 21;
+  /* 22 */ BpSelecting = 22;
+  /* 23 */ BpSelected = 23;
+  /* 24 */ Meet = 24;
+  /* 25 */ ResultMeet = 25;
+  /* 26 */ ResultSolo = 26;
+}
+
+message BattleNotify_Action {
+  /* 1 */ Round = 1;
+  /* 2 */ Order = 2;
+  /* 3 */ Speed = 3;
+  /* 4 */ Wind = 4;
+  /* 5 */ Track = 5;
+}
+
+message BattleNotify_BPBegin {
+  /* 1 */ Bgm = 1;
+  /* 2 */ Title = 2;
+  /* 3 */ Left = 3;
+  /* 4 */ Right = 4;
+  /* 5 */ PointL = 5;
+  /* 6 */ PointR = 6;
+  /* 7 */ Weapon = 7;
+  /* 8 */ Talisman = 8;
+}
+
+message BattleNotify_BPBegin_Item {
+  /* 1 */ Id = 1;
+  /* 2 */ Name = 2;
+  /* 3 */ Male = 3;
+  /* 4 */ Info = 4;
+}
+
+message BattleNotify_BPSelected {
+  /* 1 */ Id = 1;
+  /* 2 */ Index = 2;
+}
+
+message BattleNotify_BPSelecting {
+  /* 1 */ Id = 1;
+  /* 2 */ Seconds = 2;
+}
+
+message BattleNotify_Begin {
+  /* 1 */ Mode = 1;
+  /* 2 */ Map = 2;
+  /* 3 */ Left = 3;
+  /* 4 */ Right = 4;
+  /* 5 */ Mecha = 5;
+  /* 6 */ Speed = 6;
+  /* 7 */ Action = 7;
+  /* 8 */ Clip = 8;
+  /* 9 */ Dark = 9;
+  /* 10 */ Rotate = 10;
+  /* 11 */ Ruler = 11;
+  /* 12 */ Zoom = 12;
+  /* 13 */ Width = 13;
+  /* 14 */ Height = 14;
+  /* 15 */ Skin = 15;
+  /* 16 */ Task = 16;
+  /* 17 */ Monster = 17;
+}
+
+message BattleNotify_Begin_Item {
+  /* 1 */ Id = 1;
+  /* 2 */ Name = 2;
+  /* 3 */ Male = 3;
+  /* 4 */ MaleOrigin = 4;
+  /* 5 */ Info = 5;
+  /* 6 */ Hp = 6;
+  /* 7 */ Skill = 7;
+  /* 8 */ Pos = 8;
+  /* 9 */ Lv = 9;
+  /* 10 */ Ce = 10;
+  /* 11 */ Guild = 11;
+  /* 12 */ Title = 12;
+  /* 13 */ Win = 13;
+  /* 14 */ LvVip = 14;
+  /* 15 */ Buff = 15;
+  /* 16 */ Job = 16;
+  /* 17 */ Max = 17;
+  /* 18 */ Min = 18;
+}
+
+message BattleNotify_Begin_NPC {
+  /* 1 */ Id = 1;
+  /* 2 */ Hp = 2;
+  /* 3 */ Skill = 3;
+  /* 4 */ Pos = 4;
+  /* 5 */ Task = 5;
+}
+
+message BattleNotify_Begin_Task {
+  /* 1 */ Title = 1;
+  /* 2 */ Total = 2;
+}
+
+message BattleNotify_Card {
+  /* 1 */ Id = 1;
+  /* 2 */ Item = 2;
+  /* 3 */ Error = 3;
+}
+
+message BattleNotify_Card_Item {
+  /* 1 */ Id = 1;
+  /* 2 */ Count = 2;
+  /* 3 */ Pos = 3;
+}
+
+message BattleNotify_Change {
+  /* 1 */ Item = 1;
+  /* 2 */ Follow = 2;
+}
+
+message BattleNotify_Change_Item {
+  /* 1 */ Id = 1;
+  /* 2 */ Anger = 2;
+  /* 3 */ AngleMax = 3;
+  /* 4 */ AngleMin = 4;
+  /* 5 */ AngleVisible = 5;
+  /* 6 */ Animation = 6;
+  /* 7 */ Buff = 7;
+  /* 8 */ BuffAdd = 8;
+  /* 9 */ BuffAll = 9;
+  /* 10 */ BuffDel = 10;
+  /* 11 */ Chest = 11;
+  /* 12 */ Create = 12;
+  /* 13 */ Destroy = 13;
+  /* 14 */ ForceEnabled = 14;
+  /* 15 */ ForceLimited = 15;
+  /* 16 */ ForceVisible = 16;
+  /* 17 */ Hide = 17;
+  /* 18 */ Hp = 18;
+  /* 19 */ Hurt = 19;
+  /* 20 */ Mecha = 20;
+  /* 21 */ Movable = 21;
+  /* 22 */ Pos = 22;
+  /* 23 */ Prop = 23;
+  /* 24 */ Rotation = 24;
+  /* 25 */ Shield = 25;
+  /* 26 */ Skill = 26;
+  /* 27 */ SkillTarget = 27;
+  /* 28 */ Sniper = 28;
+  /* 29 */ Speed = 29;
+  /* 30 */ SpeedMax = 30;
+  /* 31 */ Tacit = 31;
+  /* 32 */ TalismanLocked = 32;
+  /* 33 */ Tip = 33;
+  /* 34 */ Titan = 34;
+}
+
+message BattleNotify_Change_Item_Buff {
+  /* 1 */ Id = 1;
+  /* 2 */ Label = 2;
+}
+
+message BattleNotify_Change_Item_Chest {
+  /* 1 */ Id = 1;
+  /* 2 */ Pos = 2;
+}
+
+message BattleNotify_Change_Item_Create {
+  /* 1 */ Owner = 1;
+  /* 2 */ Animation = 2;
+  /* 3 */ Pos = 3;
+}
+
+message BattleNotify_Change_Item_Hide {
+  /* 1 */ Pos = 1;
+}
+
+message BattleNotify_Change_Item_Hurt {
+  /* 1 */ Value = 1;
+  /* 2 */ Type = 2;
+}
+
+message BattleNotify_Change_Item_Label {
+  /* 1 */ Color = 1;
+  /* 2 */ Text = 2;
+}
+
+message BattleNotify_Change_Item_Tip {
+  /* 1 */ Label = 1;
+  /* 2 */ Icon = 2;
+  /* 3 */ Blood = 3;
+}
+
+message BattleNotify_Damage {
+  /* 1 */ Damage = 1;
+  /* 2 */ Type = 2;
+  /* 3 */ Blast = 3;
+  /* 4 */ Delay = 4;
+  /* 5 */ Next = 5;
+  /* 6 */ Track = 6;
+}
+
+message BattleNotify_Delay {
+  /* 1 */ Time = 1;
+}
+
+message BattleNotify_Error {
+  /* 1 */ Msg = 1;
+  /* 2 */ Speed = 2;
+}
+
+message BattleNotify_Event {
+  /* 1 */ Index = 1;
+  /* 2 */ Blast = 2;
+  /* 3 */ Change = 3;
+}
+
+message BattleNotify_Event_Blast {
+  /* 1 */ Damage = 1;
+  /* 2 */ Dy = 2;
+  /* 3 */ Shake = 3;
+  /* 4 */ Remark = 4;
+}
+
+message BattleNotify_Fire {
+  /* 1 */ Id = 1;
+  /* 2 */ Left = 2;
+  /* 3 */ Pos = 3;
+  /* 4 */ Weapon = 4;
+  /* 5 */ Power = 5;
+  /* 6 */ Action = 6;
+  /* 7 */ Animation = 7;
+  /* 8 */ Blast = 8;
+  /* 9 */ Sound = 9;
+  /* 10 */ Combo = 10;
+}
+
+message BattleNotify_Fire_Combo {
+  /* 1 */ Branch = 1;
+  /* 2 */ Delay = 2;
+  /* 3 */ Bullet = 3;
+  /* 4 */ Damage = 4;
+  /* 5 */ Blast = 5;
+}
+
+message BattleNotify_Fire_Combo_Branch {
+  /* 1 */ Priority = 1;
+  /* 2 */ Track = 2;
+  /* 3 */ Angle = 3;
+}
+
+message BattleNotify_Fly {
+  /* 1 */ Id = 1;
+  /* 2 */ Left = 2;
+  /* 3 */ LeftFly = 3;
+  /* 4 */ Pos = 4;
+  /* 5 */ Stay = 5;
+  /* 6 */ Event = 6;
+  /* 7 */ Land = 7;
+  /* 8 */ Safe = 8;
+}
+
+message BattleNotify_Loading {
+  /* 1 */ Id = 1;
+  /* 2 */ Percent = 2;
+}
+
+message BattleNotify_Meet {
+  /* 1 */ One = 1;
+  /* 2 */ Pair = 2;
+  /* 3 */ Exchange = 3;
+}
+
+message BattleNotify_Move {
+  /* 1 */ Id = 1;
+  /* 2 */ Pos = 2;
+  /* 3 */ Fall = 3;
+}
+
+message BattleNotify_Player {
+  /* 1 */ Id = 1;
+}
+
+message BattleNotify_Pos {
+  /* 1 */ X = 1;
+  /* 2 */ Y = 2;
+}
+
+message BattleNotify_Result {
+  /* 1 */ Win = 1;
+  /* 2 */ LeftWin = 2;
+  /* 3 */ Item = 3;
+  /* 4 */ Exp = 4;
+}
+
+message BattleNotify_ResultMecha {
+  /* 1 */ Win = 1;
+  /* 2 */ Hit = 2;
+  /* 3 */ Shot = 3;
+  /* 4 */ Hurt = 4;
+  /* 5 */ Kill = 5;
+  /* 6 */ Death = 6;
+  /* 7 */ Exp = 7;
+  /* 8 */ Upgrade = 8;
+  /* 9 */ Id = 9;
+  /* 10 */ Count = 10;
+}
+
+message BattleNotify_ResultMeet {
+  /* 1 */ Win = 1;
+  /* 2 */ Tacit = 2;
+  /* 3 */ Rate = 3;
+  /* 4 */ Item = 4;
+  /* 5 */ Exp = 5;
+  /* 6 */ Upgrade = 6;
+  /* 7 */ Id = 7;
+  /* 8 */ Count = 8;
+}
+
+message BattleNotify_ResultMeet_Item {
+  /* 1 */ Id = 1;
+  /* 2 */ Hit = 2;
+  /* 3 */ Shot = 3;
+  /* 4 */ Hurt = 4;
+  /* 5 */ Kill = 5;
+  /* 6 */ Death = 6;
+}
+
+message BattleNotify_Result_Item {
+  /* 1 */ Id = 1;
+  /* 2 */ Hit = 2;
+  /* 3 */ Shot = 3;
+  /* 4 */ Hurt = 4;
+  /* 5 */ Kill = 5;
+  /* 6 */ Death = 6;
+  /* 7 */ Mvp = 7;
+}
+
+message BattleNotify_Ride {
+  /* 1 */ Id = 1;
+  /* 2 */ Change = 2;
+}
+
+message BattleNotify_Stay {
+  /* 1 */ Id = 1;
+  /* 2 */ Dx = 2;
+  /* 3 */ Dy = 3;
+}
+
+message BattleNotify_Storm {
+  /* 1 */ Id = 1;
+  /* 2 */ Change = 2;
+}
+
+message BattleNotify_Thunder {
+  /* 1 */ Pos = 1;
+  /* 2 */ Change = 2;
+}
+
+message BattleNotify_Track {
+  /* 1 */ Id = 1;
+  /* 2 */ Pos = 2;
+  /* 3 */ Event = 3;
+}
+
+message BindAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message BindReq {
+  /* 1 */ Id = 1;
+  /* 2 */ Chip = 2;
+}
+
+message BuyAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+  /* 3 */ LvVip = 3;
+}
+
+message BuyReq {
+  /* 1 */ Item = 1;
+  /* 2 */ Present = 2;
+}
+
+message BuyReq_Item {
+  /* 1 */ Id = 1;
+  /* 2 */ Count = 2;
+  /* 3 */ Money = 3;
+}
+
+message BuyReq_Present {
+  /* 1 */ Id = 1;
+  /* 2 */ Content = 2;
+}
+
+message ChangeAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+  /* 3 */ Ball = 3;
+}
+
+message ChangeNameReq {
+  /* 1 */ Name = 1;
+}
+
+message ChannelListNotify {
+  /* 1 */ Override = 1;
+  /* 2 */ Channel = 2;
+}
+
+message ChannelListNotify_Item {
+  /* 1 */ Index = 1;
+  /* 2 */ Name = 2;
+  /* 3 */ Type = 3;
+  /* 4 */ Color = 4;
+  /* 5 */ Cost = 5;
+  /* 6 */ Closable = 6;
+  /* 7 */ Readonly = 7;
+}
+
+message ChatAck {
+  /* 1 */ Msg = 1;
+}
+
+message ChatHtml {
+  /* 1 */ Summary = 1;
+  /* 2 */ Content = 2;
+  /* 3 */ Image = 3;
+}
+
+message ChatNotify {
+  /* 1 */ Index = 1;
+  /* 2 */ Id = 2;
+  /* 3 */ Name = 3;
+  /* 4 */ Content = 4;
+  /* 5 */ Color = 5;
+  /* 6 */ Address = 6;
+  /* 7 */ Html = 7;
+}
+
+message ChatReq {
+  /* 1 */ Index = 1;
+  /* 2 */ Content = 2;
+  /* 3 */ Html = 3;
+}
+
+message CheckNameAck {
+  /* 1 */ Ok = 1;
+}
+
+message CheckNameReq {
+  /* 1 */ Name = 1;
+}
+
+message CloseChatAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message CloseChatReq {
+  /* 1 */ Index = 1;
+}
+
+message CloseViewReq {
+  /* 1 */ Id = 1;
+}
+
+message CombineAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message CombineReq {
+  /* 1 */ Lv1 = 1;
+  /* 2 */ Lv2 = 2;
+  /* 3 */ Protect = 3;
+}
+
+message ConfirmAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message ConvertReq {
+  /* 1 */ Id = 1;
+}
+
+message CreateRoomReq {
+  /* 1 */ Mode = 1;
+  /* 2 */ Password = 2;
+  /* 3 */ Vs = 3;
+  /* 4 */ Free = 4;
+}
+
+message DelFriendReq {
+  /* 1 */ Id = 1;
+}
+
+message DelMailAck {
+  /* 1 */ Msg = 1;
+}
+
+message DelMailReq {
+  /* 1 */ Index = 1;
+}
+
+message DrawReq {
+  /* 1 */ Pos = 1;
+}
+
+message EmotionAck {
+  /* 1 */ Msg = 1;
+}
+
+message EmotionReq {
+  /* 1 */ Index = 1;
+}
+
+message EnhanceAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+  /* 3 */ Chip = 3;
+}
+
+message EnhanceReq {
+  /* 1 */ Id = 1;
+  /* 2 */ Promote = 2;
+  /* 3 */ Protect = 3;
+  /* 4 */ Crystal = 4;
+}
+
+message EntryNotify {
+  /* 1 */ Mall = 1;
+  /* 2 */ Bag = 2;
+  /* 3 */ Friend = 3;
+  /* 4 */ Master = 4;
+  /* 5 */ Task = 5;
+  /* 6 */ Enhance = 6;
+  /* 7 */ Talisman = 7;
+  /* 8 */ Hang = 8;
+}
+
+message EquipAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message EquipReq {
+  /* 1 */ Id = 1;
+  /* 2 */ On = 2;
+}
+
+message ExceptionReq {
+  /* 1 */ Type = 1;
+}
+
+message ExitRoomAck {
+  /* 1 */ Msg = 1;
+}
+
+message FireReq {
+  /* 1 */ Round = 1;
+  /* 2 */ Left = 2;
+  /* 3 */ Angle = 3;
+  /* 4 */ Force = 4;
+  /* 5 */ Hash = 5;
+}
+
+message FloatReq {
+  /* 1 */ X = 1;
+  /* 2 */ Y = 2;
+}
+
+message ForgetJobAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message FriendListNotify {
+  /* 1 */ Override = 1;
+  /* 2 */ Friend = 2;
+}
+
+message FuseAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message FuseReq {
+  /* 1 */ Id = 1;
+}
+
+message FusionNotify {
+  /* 1 */ Id = 1;
+  /* 2 */ Msg = 2;
+}
+
+message GainNotify {
+  /* 1 */ Title = 1;
+  /* 2 */ Item = 2;
+  /* 3 */ Tip = 3;
+  /* 4 */ IdUse = 4;
+  /* 5 */ Fly = 5;
+}
+
+message GainNotify_Item {
+  /* 1 */ Id = 1;
+  /* 2 */ Count = 2;
+}
+
+message HallNotify {
+  /* 1 */ Item = 1;
+}
+
+message HallNotify_Item {
+  /* 1 */ Lv = 1;
+  /* 2 */ Comment = 2;
+}
+
+message HoldReq {
+  /* 1 */ Round = 1;
+}
+
+message InviteAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message InviteNotify {
+  /* 1 */ Name = 1;
+  /* 2 */ Mode = 2;
+  /* 3 */ Id = 3;
+  /* 4 */ Password = 4;
+}
+
+message InviteReq {
+  /* 1 */ Id = 1;
+  /* 2 */ Meet = 2;
+}
+
+message ItemSlot {
+  /* 1 */ Id = 1;
+  /* 2 */ Count = 2;
+  /* 3 */ Chip = 3;
+  /* 4 */ Unequipped = 4;
+}
+
+message JoinInReq {
+  /* 1 */ Id = 1;
+  /* 2 */ Password = 2;
+  /* 3 */ Meet = 3;
+}
+
+message KickAck {
+  /* 1 */ Msg = 1;
+}
+
+message KickReq {
+  /* 1 */ Id = 1;
+}
+
+message LearnLessonAck {
+  /* 1 */ Msg = 1;
+  /* 2 */ Credit = 2;
+}
+
+message LearnLessonReq {
+  /* 1 */ X10 = 1;
+}
+
+message LoadingReq {
+  /* 1 */ Percent = 1;
+}
+
+message LoginAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+  /* 3 */ Created = 3;
+  /* 4 */ Poster = 4;
+  /* 5 */ Skin = 5;
+}
+
+message LoginReq {
+  /* 1 */ Version = 1;
+  /* 2 */ Id = 2;
+  /* 3 */ Password = 3;
+  /* 4 */ Recover = 4;
+  /* 5 */ Pm = 5;
+  /* 6 */ Token = 6;
+}
+
+message MailListNotify {
+  /* 1 */ Override = 1;
+  /* 2 */ Mail = 2;
+}
+
+message MailListNotify_Item {
+  /* 1 */ Index = 1;
+  /* 2 */ Title = 2;
+  /* 3 */ Read = 3;
+  /* 4 */ Time = 4;
+}
+
+message MallNotify {
+  /* 1 */ Page = 1;
+}
+
+message MeetInviteNotify {
+  /* 1 */ Name = 1;
+  /* 2 */ Id = 2;
+}
+
+message MeetSelectAck {
+  /* 1 */ Msg = 1;
+}
+
+message MeetSelectReq {
+  /* 1 */ Left = 1;
+}
+
+message MoveReq {
+  /* 1 */ Round = 1;
+  /* 2 */ X = 2;
+}
+
+message MovieNotify {
+  /* 1 */ Id = 1;
+  /* 2 */ Msg = 2;
+}
+
+message NameAck {
+  /* 1 */ State = 1;
+  /* 2 */ Msg = 2;
+}
+
+message NoticeNotify {
+  /* 1 */ Login = 1;
+  /* 2 */ Scene = 2;
+}
+
+message OpenChatAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message OpenChatReq {
+  /* 1 */ Id = 1;
+}
+
+message OpenPosAck {
+  /* 1 */ Msg = 1;
+}
+
+message OpenPosReq {
+  /* 1 */ Pos = 1;
+  /* 2 */ Open = 2;
+}
+
+message OpenViewAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message OpenViewReq {
+  /* 1 */ Id = 1;
+}
+
+message Playback {
+  /* 1 */ Time = 1;
+  /* 2 */ Data = 2;
+}
+
+message PlayerDataClearNotify {
+  /* 1 */ Id = 1;
+}
+
+message PlayerDataNotify {
+  /* 1 */ Id = 1;
+  /* 2 */ Override = 2;
+  /* 3 */ Lv = 3;
+  /* 4 */ Ce = 4;
+  /* 5 */ Name = 5;
+  /* 6 */ Male = 6;
+  /* 7 */ Info = 7;
+  /* 8 */ Item = 8;
+  /* 9 */ Hp = 9;
+  /* 10 */ Atk = 10;
+  /* 11 */ Strike = 11;
+  /* 12 */ Tough = 12;
+  /* 13 */ Cp = 13;
+  /* 14 */ Guild = 14;
+  /* 15 */ Title = 15;
+  /* 16 */ Win = 16;
+  /* 17 */ Hit = 17;
+  /* 18 */ Escape = 18;
+  /* 19 */ Total = 19;
+  /* 20 */ Mvp = 20;
+  /* 21 */ WinMax = 21;
+  /* 22 */ Kill = 22;
+  /* 23 */ KillTeam = 23;
+  /* 24 */ Auth = 24;
+  /* 25 */ LvVip = 25;
+  /* 26 */ State = 26;
+  /* 27 */ Proficiency = 27;
+  /* 28 */ Privacy = 28;
+}
+
+message PlayerDataNotify_Privacy {
+  /* 1 */ College = 1;
+  /* 2 */ Talismans = 2;
+  /* 3 */ VipDial = 3;
+  /* 4 */ VipDialGet = 4;
+  /* 5 */ Effect = 5;
+  /* 6 */ Bgm = 6;
+  /* 7 */ Head = 7;
+  /* 8 */ Face = 8;
+  /* 9 */ Deco = 9;
+  /* 10 */ Vs = 10;
+  /* 11 */ Free = 11;
+  /* 12 */ Job = 12;
+  /* 13 */ Talent = 13;
+  /* 14 */ CeJob = 14;
+  /* 15 */ RichDial = 15;
+}
+
+message PlayerDataNotify_Privacy_Lesson {
+  /* 1 */ Index = 1;
+  /* 2 */ Lv = 2;
+}
+
+message PlayerInfo {
+  /* 1 */ Id = 1;
+  /* 2 */ State = 2;
+  /* 3 */ Lv = 3;
+  /* 4 */ LvVip = 4;
+  /* 5 */ Name = 5;
+  /* 6 */ Male = 6;
+  /* 7 */ Head = 7;
+  /* 8 */ Face = 8;
+  /* 9 */ Deco = 9;
+  /* 10 */ Comment = 10;
+  /* 11 */ Black = 11;
+}
+
+message PreRegisterAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+  /* 3 */ Male = 3;
+  /* 4 */ Name = 4;
+  /* 5 */ Map = 5;
+}
+
+message PropsAck {
+  /* 1 */ Msg = 1;
+  /* 2 */ Props = 2;
+}
+
+message PropsReq {
+  /* 1 */ Round = 1;
+}
+
+message QueryAddFriendReq {
+  /* 1 */ Query = 1;
+  /* 2 */ ByName = 2;
+}
+
+message RandomNameAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+  /* 3 */ Name = 3;
+}
+
+message RandomNameReq {
+  /* 1 */ Male = 1;
+}
+
+message RankStarAck {
+  /* 1 */ Rank = 1;
+  /* 2 */ RankAll = 2;
+}
+
+message RankStarAck_Item {
+  /* 1 */ Name = 1;
+  /* 2 */ Count = 2;
+  /* 3 */ Value = 3;
+}
+
+message ReadMailAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+  /* 3 */ Id = 3;
+  /* 4 */ Name = 4;
+  /* 5 */ Content = 5;
+}
+
+message ReadMailReq {
+  /* 1 */ Index = 1;
+}
+
+message ReadProgressAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message ReadProgressReq {
+  /* 1 */ Id = 1;
+  /* 2 */ Index = 2;
+}
+
+message RecentStarAck {
+  /* 1 */ Item = 1;
+}
+
+message RecentStarAck_Item {
+  /* 1 */ Name = 1;
+  /* 2 */ Id = 2;
+  /* 3 */ Count = 3;
+}
+
+message RedirectReq {
+  /* 1 */ Address = 1;
+}
+
+message RefreshRichAck {
+  /* 1 */ Msg = 1;
+}
+
+message RefreshVipAck {
+  /* 1 */ Msg = 1;
+}
+
+message RegisterReq {
+  /* 1 */ Name = 1;
+  /* 2 */ Male = 2;
+}
+
+message ResetExpAck {
+  /* 1 */ Msg = 1;
+}
+
+message RestoreTrustAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message RideAck {
+  /* 1 */ Msg = 1;
+}
+
+message RideReq {
+  /* 1 */ Round = 1;
+  /* 2 */ On = 2;
+}
+
+message RollAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+  /* 3 */ Pos = 3;
+}
+
+message RollGoldenAck {
+  /* 1 */ Msg = 1;
+}
+
+message RollJobAck {
+  /* 1 */ Msg = 1;
+}
+
+message RollRomeAck {
+  /* 1 */ Msg = 1;
+}
+
+message RollSilverAck {
+  /* 1 */ Msg = 1;
+}
+
+message RoomAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+  /* 3 */ Room = 3;
+}
+
+message RoomNotify {
+  /* 1 */ Override = 1;
+  /* 2 */ Mode = 2;
+  /* 3 */ Locked = 3;
+  /* 4 */ Free = 4;
+  /* 5 */ Map = 5;
+  /* 6 */ Item = 6;
+  /* 7 */ Prop = 7;
+  /* 8 */ Reason = 8;
+  /* 9 */ Bell = 9;
+  /* 10 */ Matching = 10;
+  /* 11 */ Emotion = 11;
+  /* 12 */ Recent = 12;
+}
+
+message RoomNotify_Emotion {
+  /* 1 */ Pos = 1;
+  /* 2 */ Id = 2;
+  /* 3 */ Index = 3;
+}
+
+message RoomNotify_Item {
+  /* 1 */ Pos = 1;
+  /* 2 */ State = 2;
+  /* 3 */ Id = 3;
+  /* 4 */ Vip = 4;
+}
+
+message SelectJobAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message SelectJobReq {
+  /* 1 */ Id = 1;
+}
+
+message SendMailAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message SendMailReq {
+  /* 1 */ Id = 1;
+  /* 2 */ Title = 2;
+  /* 3 */ Content = 3;
+}
+
+message SetCommentAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message SetCommentReq {
+  /* 1 */ Id = 1;
+  /* 2 */ Comment = 2;
+}
+
+message SetFreeAck {
+  /* 1 */ Msg = 1;
+}
+
+message SetFreeReq {
+  /* 1 */ Free = 1;
+}
+
+message SetMapAck {
+  /* 1 */ Msg = 1;
+}
+
+message SetMapReq {
+  /* 1 */ Map = 1;
+}
+
+message SetPortraitAck {
+  /* 1 */ Msg = 1;
+}
+
+message SetPosAck {
+  /* 1 */ Msg = 1;
+}
+
+message SetPosReq {
+  /* 1 */ Pos = 1;
+}
+
+message SetPropAck {
+  /* 1 */ Msg = 1;
+}
+
+message SetPropReq {
+  /* 1 */ Prop = 1;
+}
+
+message SetReadyAck {
+  /* 1 */ Msg = 1;
+}
+
+message SetReadyReq {
+  /* 1 */ Ready = 1;
+}
+
+message SetupReq {
+  /* 1 */ Effect = 1;
+  /* 2 */ Bgm = 2;
+}
+
+message SkillReq {
+  /* 1 */ Round = 1;
+  /* 2 */ Target = 2;
+  /* 3 */ Index = 3;
+  /* 4 */ Speed = 4;
+}
+
+message SnapshotAck {
+  /* 1 */ Data = 1;
+  /* 2 */ Time = 2;
+}
+
+message SnapshotReq {
+  /* 1 */ Jpeg = 1;
+  /* 2 */ Gray = 2;
+  /* 3 */ Rect = 3;
+}
+
+message SnapshotReq_Rect {
+  /* 1 */ X = 1;
+  /* 2 */ Y = 2;
+  /* 3 */ Width = 3;
+  /* 4 */ Height = 4;
+}
+
+message SnipeReq {
+  /* 1 */ Round = 1;
+  /* 2 */ X = 2;
+  /* 3 */ Y = 3;
+}
+
+message StarPoolNotify {
+  /* 1 */ Version = 1;
+  /* 2 */ Item = 2;
+}
+
+message StarPoolNotify_Item {
+  /* 1 */ Id = 1;
+  /* 2 */ Count = 2;
+  /* 3 */ Quality = 3;
+}
+
+message StartAck {
+  /* 1 */ Msg = 1;
+}
+
+message StartReq {
+  /* 1 */ Cancel = 1;
+}
+
+message SyncReq {
+  /* 1 */ N = 1;
+}
+
+message TalismanNotify {
+  /* 1 */ Page = 1;
+}
+
+message UpgradeCollegeAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+  /* 3 */ Grade = 3;
+}
+
+message UpgradeCollegeReq {
+  /* 1 */ Index = 1;
+}
+
+message UpgradeJobAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message UpgradeJobReq {
+  /* 1 */ Index = 1;
+}
+
+message UseAck {
+  /* 1 */ Msg = 1;
+  /* 2 */ CloseBag = 2;
+  /* 3 */ KeepMenu = 3;
+  /* 4 */ Gain = 4;
+}
+
+message UseCDKAck {
+  /* 1 */ Msg = 1;
+}
+
+message UseCDKReq {
+  /* 1 */ Cdk = 1;
+}
+
+message UseFragmentReq {
+  /* 1 */ Id = 1;
+}
+
+message UseReq {
+  /* 1 */ Id = 1;
+  /* 2 */ Notify = 2;
+}
+
+message UseUFOAck {
+  /* 1 */ Msg = 1;
+}
+
+message WatchAck {
+  /* 1 */ Ok = 1;
+  /* 2 */ Msg = 2;
+}
+
+message WatchReq {
+  /* 1 */ Id = 1;
+}
+
+message google {
+  /* 1 */ Value = 1;
+  /* 1 */ Name = 1;
+  /* 1 */ File = 1;
+  /* 1 */ Start = 1;
+  /* 1 */ JavaPackage = 1;
+  /* 1 */ MessageSetWireFormat = 1;
+  /* 1 */ Ctype = 1;
+  /* 1 */ NamePart = 1;
+  /* 1 */ Path = 1;
+  /* 1 */ Location = 1;
+  /* 1 */ Annotation = 1;
+  /* 1 */ Seconds = 1;
+  /* 1 */ Paths = 1;
+  /* 1 */ FileName = 1;
+  /* 1 */ NullValue = 1;
+  /* 1 */ Values = 1;
+  /* 1 */ Kind = 1;
+  /* 2 */ Methods = 2;
+  /* 2 */ RequestTypeUrl = 2;
+  /* 2 */ Root = 2;
+  /* 2 */ Package = 2;
+  /* 2 */ Field = 2;
+  /* 2 */ Number = 2;
+  /* 2 */ Extendee = 2;
+  /* 2 */ Method = 2;
+  /* 2 */ InputType = 2;
+  /* 2 */ NoStandardDescriptorAccessor = 2;
+  /* 2 */ AllowAlias = 2;
+  /* 2 */ IsExtension = 2;
+  /* 2 */ Span = 2;
+  /* 2 */ SourceFile = 2;
+  /* 2 */ Nanos = 2;
+  /* 2 */ Fields = 2;
+  /* 2 */ NumberValue = 2;
+  /* 2 */ Cardinality = 2;
+  /* 2 */ Enumvalue = 2;
+  /* 3 */ Options = 3;
+  /* 3 */ RequestStreaming = 3;
+  /* 3 */ Dependency = 3;
+  /* 3 */ NestedType = 3;
+  /* 3 */ OutputType = 3;
+  /* 3 */ IdentifierValue = 3;
+  /* 3 */ StringValue = 3;
+  /* 3 */ LeadingComments = 3;
+  /* 3 */ Begin = 3;
+  /* 3 */ Oneofs = 3;
+  /* 4 */ Version = 4;
+  /* 4 */ SourceContext = 4;
+  /* 4 */ ResponseTypeUrl = 4;
+  /* 4 */ MessageType = 4;
+  /* 4 */ EnumType = 4;
+  /* 4 */ End = 4;
+  /* 4 */ Label = 4;
+  /* 4 */ PositiveIntValue = 4;
+  /* 4 */ TrailingComments = 4;
+  /* 4 */ BoolValue = 4;
+  /* 5 */ Syntax = 5;
+  /* 5 */ ResponseStreaming = 5;
+  /* 5 */ ExtensionRange = 5;
+  /* 5 */ Type = 5;
+  /* 5 */ ClientStreaming = 5;
+  /* 5 */ Lazy = 5;
+  /* 5 */ NegativeIntValue = 5;
+  /* 5 */ StructValue = 5;
+  /* 6 */ TypeUrl = 6;
+  /* 6 */ Mixins = 6;
+  /* 6 */ Service = 6;
+  /* 6 */ Extension = 6;
+  /* 6 */ TypeName = 6;
+  /* 6 */ ServerStreaming = 6;
+  /* 6 */ Jstype = 6;
+  /* 6 */ DoubleValue = 6;
+  /* 6 */ LeadingDetachedComments = 6;
+  /* 6 */ ListValue = 6;
+  /* 7 */ OneofIndex = 7;
+  /* 7 */ MapEntry = 7;
+  /* 8 */ OneofDecl = 8;
+  /* 8 */ JavaOuterClassname = 8;
+  /* 8 */ Packed = 8;
+  /* 8 */ AggregateValue = 8;
+  /* 9 */ SourceCodeInfo = 9;
+  /* 9 */ ReservedRange = 9;
+  /* 9 */ OptimizeFor = 9;
+  /* 10 */ PublicDependency = 10;
+  /* 10 */ ReservedName = 10;
+  /* 10 */ JsonName = 10;
+  /* 10 */ JavaMultipleFiles = 10;
+  /* 10 */ Weak = 10;
+  /* 11 */ WeakDependency = 11;
+  /* 11 */ DefaultValue = 11;
+  /* 11 */ GoPackage = 11;
+  /* 16 */ CcGenericServices = 16;
+  /* 17 */ JavaGenericServices = 17;
+  /* 18 */ PyGenericServices = 18;
+  /* 20 */ JavaGenerateEqualsAndHash = 20;
+  /* 27 */ JavaStringCheckUtf8 = 27;
+  /* 31 */ CcEnableArenas = 31;
+  /* 33 */ Deprecated = 33;
+  /* 36 */ ObjcClassPrefix = 36;
+  /* 37 */ CsharpNamespace = 37;
+  /* 999 */ UninterpretedOption = 999;
+}
